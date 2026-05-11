@@ -81,26 +81,26 @@ const App = () => {
   };
 
   return(
-    <section className="h-screen min-w-full
+    <section className="h-dvh min-w-full
     flex justify-center items-center
     bg-neutral-900">
 
       <div className="flex flex-col justify-start items-center
-      w-[90vw] max-w-xl min-h-[75vh]
-      gap-12
-      px-12 py-12  
+      w-[90vw] max-w-xl min-h-[50vh] max-h-[75vh]
+      max-sm:gap-4 gap-12
+      max-sm:px-6 max-sm:py-6 px-12 py-12  
       rounded-2xl
       bg-secondary-700">
 
         <form className="flex
-        gap-4 
+        max-sm:gap-2 gap-4 
         w-full"
         onSubmit={(e) => {
           e.preventDefault();
           handleAddTask();
         }}>
-        <input className="flex-[5] h-12
-        p-4
+        <input className="max-sm:w-50 flex-1 h-12
+        max-sm:px-4 max-sm:py-2 p-4
         rounded-full
         bg-white text-text-primary
         border-none outline-none
@@ -110,7 +110,7 @@ const App = () => {
         value={input}
         onChange={(e) => setInput(e.target.value)}/>
 
-        <button className='flex-[2] h-12
+        <button className='max-sm:flex-1 max-sm:max-w-28 w-32 h-12
         rounded-full
         bg-accent-500 text-white
         drop-shadow-lg

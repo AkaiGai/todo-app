@@ -5,9 +5,10 @@ const TaskCard = ({task, index, onComplete, onDelete}) => {
   
 
   return(
-    <div className='flex justify-between items-center shrink-0
-    w-full h-12 gap-4 px-4
-    rounded-full
+    <div className='flex max-sm:flex-col justify-between sm:items-center shrink-0
+    max-sm:gap-1 max-sm:px-4 max-sm:py-2
+    w-full sm:h-12 gap-4 px-4
+    max-sm:rounded-lg rounded-full
     bg-secondary-300
     drop-shadow-lg'>
 
@@ -25,7 +26,7 @@ const TaskCard = ({task, index, onComplete, onDelete}) => {
         
       </div>
 
-      <div className='flex items-center
+      <div className='flex max-sm:justify-end items-center 
       gap-2 z-10'>
         <Checkbox
           checked={task.is_completed}
