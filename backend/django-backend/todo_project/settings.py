@@ -61,7 +61,8 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://todo-4vxhbt66a-gaikwadprathamesh9999-4646s-projects.vercel.app"
+    "https://todo-4vxhbt66a-gaikwadprathamesh9999-4646s-projects.vercel.app",
+    'https://todo-app-omega-azure-13.vercel.app/'
 ]
 
 ROOT_URLCONF = 'todo_project.urls'
