@@ -3,7 +3,7 @@ import TaskCard from './components/taskcard'
 
 const App = () => {
 
-  const backend = 'http://127.0.0.1:8000/todo-app'
+  const backend = import.meta.env.VITE_BACKEND
 
   const [input, setInput] = useState('');
   const [tasks, setTask] = useState([]);
