@@ -1,20 +1,18 @@
-Counter App
+Todo App
 
-This is a simple full-stack counter application built using React for the frontend and Django for the backend.
-The project demonstrates basic frontend-backend communication using API calls.
+This is a simple full-stack Todo application built using React for the frontend and Django for the backend. The project features a clean and minimal user interface focused on basic task management functionality.
 
-The frontend is deployed on Vercel and the backend is deployed on Render.
+The application allows users to create and manage tasks through the React frontend, while the backend handles API requests and temporarily stores task data in the backend database file (db.sqlite3).
 
-Whenever the user interacts with the counter on the frontend, a request is sent to the Django backend.
-The backend processes the request and stores the counter-related data in the SQLite database (db.sqlite3).
-
-This project was mainly created to practice:
+This project was created to practice:
 
 React frontend development
 Django backend APIs
-API communication between frontend and backend
-Database handling
-Full-stack deployment
-Live Demo
+CRUD operations
+Frontend and backend communication
+Database handling in Django
+Building clean and responsive UI layouts
 
-Counter App : https://counter-three-xi.vercel.app/
+The frontend is connected to the Django backend through API calls, allowing tasks to be stored and retrieved dynamically during runtime.
+
+Todo App : https://todo-app-omega-azure-13.vercel.app/
